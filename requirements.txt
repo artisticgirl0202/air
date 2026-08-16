@@ -1,0 +1,38 @@
+# 1. Data Handling
+pandas>=2.0.0
+polars>=0.19.0
+numpy>=1.24.0
+openpyxl>=3.1.0
+
+# 2. API & Network
+requests
+aiohttp
+fastapi
+uvicorn[standard]
+
+# 3. ML & Time-series
+scikit-learn
+lightgbm
+xgboost
+prophet
+torch>=2.0.0
+shap
+joblib
+
+# 4. Visualization & Dashboard
+streamlit
+plotly
+folium
+pydeck
+streamlit-folium
+streamlit-authenticator>=0.4.2,<0.5
+bcrypt
+PyYAML
+
+# 5. Database & Utils
+psycopg2-binary
+SQLAlchemy
+python-dotenv
+python-docx>=1.1.0
+python-pptx>=1.0.0
+jupyterlab

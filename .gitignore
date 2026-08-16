@@ -1,0 +1,56 @@
+# --- Secrets and credentials (never commit) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials.json
+secrets.json
+dashboard/config.yaml
+dashboard/config.toml
+dashboard/config.yaml.example
+/streamlit
+.streamlit/secrets.toml
+.streamlit/secrets.toml.example
+
+# --- Local data, models, and legal/business drafts ---
+data/*
+!data/.gitkeep
+models/*
+!models/.gitkeep
+docs/*
+!docs/.gitkeep
+
+# --- Python / venv / caches ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+air/
+.venv/
+venv/
+env/
+
+# --- OS / IDE ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# --- Logs and local uploads ---
+*.log
+data/uploads/
+dashboard/uploads/
+
+notebooks/
+docs/
+data/
+models/
