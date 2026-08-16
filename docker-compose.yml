@@ -1,0 +1,16 @@
+services:
+  timescaledb:
+    image: timescale/timescaledb-ha:pg15
+    container_name: lotus_timescaledb
+    environment:
+      - POSTGRES_USER=${DB_USER:-admin}
+      - POSTGRES_PASSWORD=${DB_PASSWORD:?DB_PASSWORD must be set}
+      - POSTGRES_DB=${DB_NAME:-air_quality_db}
+    ports:
+      - "${DB_PORT:-5433}:5432"
+    volumes:
+      - timescale_data:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  timescale_data:

@@ -1,0 +1,16 @@
+# FastAPI serving only. No Streamlit, Prophet, LightGBM, or Jupyter.
+fastapi
+uvicorn[standard]
+SQLAlchemy
+psycopg2-binary
+python-dotenv
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn
+joblib
+xgboost
+huggingface-hub>=0.20.0
+aiohttp
+requests
+APScheduler>=3.10.0
+tenacity>=8.2.0

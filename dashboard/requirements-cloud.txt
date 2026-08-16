@@ -1,0 +1,11 @@
+streamlit>=1.61.0
+streamlit-authenticator>=0.4.2,<0.5
+bcrypt
+PyYAML
+pandas
+plotly
+folium
+streamlit-folium
+requests
+python-dotenv
+SQLAlchemy
